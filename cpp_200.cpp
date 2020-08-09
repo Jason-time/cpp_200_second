@@ -4,13 +4,13 @@ using namespace std;
 
 int main(int argc, char* argv[] )
 {
-    int number = 0;
+    int one = 1;
+    int two = 2;
+    int sum = one + two;
 
-    cin >> number;
-
-    cout << "입력한 숫자는 " << number << "입니다." << endl;
+    cout << "1 + 2 = " << sum << endl;
 
     return 0;
 }
 
-// 002 - 콘솔창에 출력하기 ( cout, cin, endl )
+// 003 - 변수 배우기 
