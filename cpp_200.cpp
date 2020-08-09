@@ -1,21 +1,18 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	string my_country = "korea";
-	string my_job = "developer";
+	int poositive = 100;
+	int negaative = -200;
+	int ascii_value = 'A';
 
-	cout << "Country : " << my_country << endl;
-	cout << "Job : " << my_job << endl;
-
-	string my_info = my_country + ", " + my_job;
-
-	cout << "My Info : " << my_info << endl;
+	cout << "양수 값 : " << poositive << endl;
+	cout << "음수 값 : " << negaative << endl;
+	cout << "아스키 값 : " << ascii_value << endl;
 
 	return 0;
 }
 
-// 017 - 문자열형 변수 이해하기 ( string )
+// 018 - 정수형 변수 이해하기(int)
