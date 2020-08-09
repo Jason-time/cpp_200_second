@@ -1,21 +1,21 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	char ch1 = 'c';
-	char ch2 = 200;
+	string my_country = "korea";
+	string my_job = "developer";
 
-	unsigned char ch3 = 'c';
-	unsigned char ch4 = 200;
+	cout << "Country : " << my_country << endl;
+	cout << "Job : " << my_job << endl;
 
-	printf("char ch1 = %c, %d\n", ch1, ch1);
-	printf("char ch2 = %c, %d\n", ch2, ch2);
-	printf("char ch3 = %c, %d\n", ch3, ch3);
-	printf("char ch4 = %c, %d\n", ch4, ch4);
-	
+	string my_info = my_country + ", " + my_job;
+
+	cout << "My Info : " << my_info << endl;
+
 	return 0;
 }
 
-// 016 - 문자형 변수 이해하기 ( char ) 
+// 017 - 문자열형 변수 이해하기 ( string )
