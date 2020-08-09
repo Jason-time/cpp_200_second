@@ -4,16 +4,13 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int x = 1;
-	int y = 2;
-	int z = 0;
+	int goguryeo = 37, baekjae = 18, silla = 57;
 
-	z = x > y ? x : y;
-
-	cout << "x와 y중 더 큰 값은 : " << z << endl;
+	printf("삼국 건국연도\n");
+	printf("고구려 bc%d년, 백제 bc%d년, 신라 bc%d년", goguryeo, baekjae, silla);
 
 	return 0;
 }
 
-// 026 - 조건부 삼항 연산자 이해하기 ( ? : )
+// 027 - 쉼표 연산자 이해하기 (,)
 
