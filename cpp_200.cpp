@@ -1,27 +1,20 @@
 ﻿#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	string str = "I'm a boy. You are a girl.";
+	int data[10] = { 5,19,76, 3,10,89,54,43,1,17 };
 
-	char find = 'a';
+	for (int i =0;i<10;i++){
 
-	int size = str.size();
-	int count = 0;
-
-	for (int i = 0;i < size;i++) {
-
-		if (str[i] == find)
-			count++;
+		if (data[i] % 2 == 0)
+			cout << i << " ; " << data[i] << "는 짝수입니다." << endl;
+		else
+			cout << i << " ; " << data[i] << "는 홀수입니다." << endl;
 	}
-
-	cout << "문장의 a 개수는 " << count << "개 입니다." << endl;
 
 	return 0;
 }
 
-// 035 - 순환문으로 특정 문자 개수 구하기(for)
-
+// 036 - 순환문으로 홀수, 짝수 찾기 ( for )
