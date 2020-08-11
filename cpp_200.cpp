@@ -4,16 +4,18 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	cout << "==절대값 구하기==" << endl;
-	cout << "-10의 절대값  " << abs(-10) << endl;
-	cout << "-5.72의 절대값 " << fabs(-5.72) << endl;
-	cout << endl;
+	double x = 5.7;
+	int div1 = static_cast<int>(x / 5);
+	double mod1 = x - 5 * static_cast<int>(x / 5);
 
-	cout << "==제곱수 구하기==" << endl;
-	cout << "2의 2승 : " << pow(2, 2) << endl;
-	cout << "3의 4승 : " << pow(3, 4) << endl;
-	
+	int y = 10;
+	int div2 = static_cast<int>(y / 2);
+	double mod2 = y % 2;
+
+	cout << "5.7 / 5 = 몫 : " << div1 << ", 나머지 : " << mod1 << endl;
+	cout << "10 / 2 = 몫 : " << div2 << ", 나머지 : " << mod2 << endl;
+
 	return 0;
 }
 
-// 045 - 절대값과 제곱수 구하기 ( abs, fabs, pow )
+// 046 - 몫과 나머지 구하기 ( % )
