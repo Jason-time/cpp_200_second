@@ -1,40 +1,21 @@
 ﻿#include <iostream>
-#include <sstream>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	stringstream ss;
+	string sort_str1 = "gojoeon";
+	string sort_str2 = "AaBbCcDdEe";
 
-	double number1 = 0.0;
+	sort(sort_str1.begin(), sort_str1.end());
+	sort(sort_str2.begin(), sort_str2.end());
 
-	ss << "1.2,2.6-3.8!4.7=8.9";
+	cout << "소문자만 정렬 : " << sort_str1 << endl;
+	cout << "대소문자만 정렬 : " << sort_str2 << endl;
 
-	cout << "== string to double ==" << endl;
-	while (!ss.eof()) {
-
-		ss >> number1;
-		ss.ignore();
-
-		cout << number1 << ", ";
-	}
-	ss.clear();
-	ss.str("");
-	ss << "1," << "2" << 3 << " " << 4;
-
-	int number2 = 0;
-
-	cout << endl << "== string to int ==" << endl;
-	while (!ss.eof()) {
-
-		ss >> number2;
-		ss.ignore();
-
-		cout << number2 << ", ";
-
-	}
 	return 0;
 }
 
-// 064 - 문자열을 숫자로 변환하기 ( stringstream )
+// 065 - 문자열 정렬하기 ( sort )
