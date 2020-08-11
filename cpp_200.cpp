@@ -1,20 +1,24 @@
 ﻿#include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int number1 = 10;
-	double number2 = 67.8;
+	auto result1 = min(1, 5);
+	auto result2 = max('a', 'z');
 
-	string no_str1 = to_string(number1);
-	string no_str2 = to_string(number2);
+	cout << result1 << ", " << result2 << endl;
 
-	cout << "number1 : " << number1 << endl;
-	cout << "number2 : " << number2 << endl;
+	auto result3 = minmax({ 'a','n','z' });
+	auto result4 = minmax({ 1,2,3 });
+
+	cout << result3.first << ", " << result3.second << endl;
+	cout << result4.first << ", " << result4.second << endl;
+
 
 	return 0;
 }
 
-// 067 - 숫자를 문자열로 변환하기 ( to_string )
+// 068 - 정수와 문자의 최대/최소값 알아내기 ( min, max )
