@@ -5,14 +5,13 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	string sentence = "I coding";
-	sentence.insert(2, "hate ");
-	cout << sentence << endl;
+	string sentence = "I hate coding.";
 
-	sentence.insert(7, "or like ");
-	cout << sentence << endl;
+	sentence.erase(0, 7);
+
+	cout << "I like " << sentence << endl;
 
 	return 0;
 }
 
-// 058 - 문자열 중간에 문자열 추가하기 ( insert )
+// 059 - 문자열 일부 지우기 ( erase )
