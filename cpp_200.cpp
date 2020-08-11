@@ -4,22 +4,19 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int number = 2;
+	int number = 0;
 
-	switch (number) {
+	while (number < 10) {
 
-		case 1:
-			cout << "number 값은 1입니다." << endl;
-			break;
-		case 2:
-			cout << "number 값은 2입니다." << endl;
-			break;
-		default:
-			cout << "number 값을 알 수 없습니다." << endl;
-			break;
+		number++;
+
+		if (number % 3 == 0)
+			continue;
+		else
+			cout << "number 값 : " << number << endl;
 	}
 
 	return 0;
 }
 
-// 037 - 조건 선택문 이해하기 ( switch~case~default )
+// 038 - 조건 순환문 이해하기 ( while~continue~break )
