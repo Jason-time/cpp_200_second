@@ -1,24 +1,22 @@
 ﻿#include <iostream>
-#include <string>
-#include <algorithm>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	auto result1 = min(1, 5);
-	auto result2 = max('a', 'z');
+	int number1 = 10;
+	int* pointer1 = &number1;
 
-	cout << result1 << ", " << result2 << endl;
+	double number2 = 23.4;
+	double* pointer2 = &number2;
 
-	auto result3 = minmax({ 'a','n','z' });
-	auto result4 = minmax({ 1,2,3 });
+	cout << "number1 : " << number1 << " (size : " << sizeof(number1) << ")" << endl;
+	cout << "pointer1 : " << pointer1 << " (size : " << sizeof(pointer1) << ")" << endl;
 
-	cout << result3.first << ", " << result3.second << endl;
-	cout << result4.first << ", " << result4.second << endl;
-
+	cout << "number2 : " << number2 << " (size : " << sizeof(number2) << ")" << endl;
+	cout << "pointer 2 : " << pointer2 << " (size : " << sizeof(pointer2 )<< ")" << endl;
 
 	return 0;
 }
 
-// 068 - 정수와 문자의 최대/최소값 알아내기 ( min, max )
+// 069 - 포인터 이해하기 (*)
